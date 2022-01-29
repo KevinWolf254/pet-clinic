@@ -43,7 +43,18 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
+	<scm>
+		<developerConnection>scm:git:git@github.com:KevinWolf254/pet-clinic.git</developerConnection>
+	</scm>
 </project>
