@@ -1,6 +1,6 @@
-package co.ke.proaktivio.petclinic.model;
+package co.ke.proaktivio.petclinic.models;
 
-public class PetType {
+public class PetType extends BaseEntity {
     private String name;
 
     public String getName() {
