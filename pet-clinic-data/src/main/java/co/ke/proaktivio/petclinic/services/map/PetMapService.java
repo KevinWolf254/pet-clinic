@@ -2,9 +2,11 @@ package co.ke.proaktivio.petclinic.services.map;
 
 import co.ke.proaktivio.petclinic.models.Pet;
 import co.ke.proaktivio.petclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {

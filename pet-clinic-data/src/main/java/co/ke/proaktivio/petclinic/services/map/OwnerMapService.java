@@ -2,9 +2,11 @@ package co.ke.proaktivio.petclinic.services.map;
 
 import co.ke.proaktivio.petclinic.models.Owner;
 import co.ke.proaktivio.petclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
