@@ -1,11 +1,11 @@
 package co.ke.proaktivio.petclinic.services.map;
 
 import co.ke.proaktivio.petclinic.models.Vet;
-import co.ke.proaktivio.petclinic.services.CrudService;
+import co.ke.proaktivio.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetMapService extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
