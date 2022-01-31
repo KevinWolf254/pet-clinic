@@ -5,7 +5,7 @@
     <title>List of Vets</title>
 </head>
 <body>
-    <!--/*thymesVar id="owner" type="co.ke.proaktivio.petclinic.models.Owner"    -->
+    <!--/*thymesVar id="vet" type="co.ke.proaktivio.petclinic.models.Vet"    -->
     <h1 th:text="'List of Vets'">List of Vets...</h1>
     <table>
         <thead>
@@ -17,9 +17,9 @@
         </thead>
         <tbody>
         <tr th:each="vet:&{vets}">
-            <td th:each=""${owner.id}>1</td>
-            <td th:each=""${owner.firstName}>1</td>
-            <td th:each=""${owner.lastName}>1</td>
+            <td th:each=""${vet.id}>1</td>
+            <td th:each=""${vet.firstName}>1</td>
+            <td th:each=""${vet.lastName}>1</td>
         </tr>
         </tbody>
     </table>
